@@ -27,14 +27,30 @@ public class Test0104 {
 
 
         // While loop
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number");
-        int x = sc.nextInt();
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter a number");
+        // int x = sc.nextInt();
         
-        int num =0;
-        while(num <x){
-            System.out.println(num);
-            num++;
+        // int num =0;
+        // while(num <x){
+        //     System.out.println(num);
+        //     num++;
+        // }
+
+
+        // nested loop
+        int a =5;
+        int n =1;
+        while(n<=a){
+            int b =1;
+            while(b<n){
+                System.out.print("*");
+                b++;
+            }
+            System.out.println("*");
+            n++;
         }
+
+
     }
 }
