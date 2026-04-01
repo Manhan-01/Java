@@ -39,17 +39,31 @@ public class Test0104 {
 
 
         // nested loop
-        int a =5;
-        int n =1;
-        while(n<=a){
-            int b =1;
-            while(b<n){
-                System.out.print("*");
-                b++;
-            }
-            System.out.println("*");
-            n++;
+        // int a =5;
+        // int n =1;
+        // while(n<=a){
+        //     int b =1;
+        //     while(b<n){
+        //         System.out.print("*");
+        //         b++;
+        //     }
+        //     System.out.println("*");
+        //     n++;
+        // }
+
+        // do while
+        // int a = 1;
+        // do{
+        //     System.out.println("Hello");
+        //     a++;
+        // }while(a<=5);
+
+
+        // for loop
+        for (int i=1; i<=10; i++){
+            System.out.println(i);
         }
+            
 
 
     }
