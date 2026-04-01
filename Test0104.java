@@ -59,11 +59,63 @@ public class Test0104 {
         // }while(a<=5);
 
 
-        // for loop
-        for (int i=1; i<=10; i++){
-            System.out.println(i);
-        }
+        // // for loop
+        // for (int i=1; i<=10; i++){
+        //     System.out.println(i);
+        // }
             
+
+        // for(int i=1; i<=100;i++){
+        //     System.out.println(i);
+        // }
+
+        // printing even numbers from 1 to 100
+        // for(int i=1; i<=100; i++){
+        //     if (i%2 == 0){
+        //         System.out.println(i);
+        //     }
+        // }
+
+
+        // printing odd numbers from 1 to 100
+        // for(int i=1; i<=100; i++){
+        //     if(i%2 != 0){
+        //         System.out.println(i);
+        //     }
+        // }
+
+        // Find the sum of numbers from 1 to N.
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter a value under 100");
+        // int num = sc.nextInt();
+
+        // int sum = 0;
+
+        // if(num >0 && num <=100){
+        //     for (int i = 0;i<=num; i++){
+        //     sum = sum+i;
+        //     }
+        // System.out.println(sum);
+        // }else{
+        //     System.out.println("Invalid input");
+        // }
+
+
+
+        // Print the multiplication table of a number.
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("enter a number");
+        // int x = sc.nextInt();
+
+        // for (int i=1;i<=10;i++){
+        //     System.out.println(i*x);
+        // }
+        
+
+
+        // Count how many digits are in a number.
+        
+
 
 
     }
