@@ -1,0 +1,28 @@
+1. 
+I have created a java file with name Dog.java and inside I created a Dog class and declared the instance variables and added a method.
+Then created another tester class with name DogTestdrive, which has a main method and created an object inside it.
+Now while running the java file with file name I was getting error, because the main method is inside DogTestdrive class but I am running Dog class
+To resolve this I just need to the class which has main method(in this case DogTestdrive)
+    javac DogTestdrive
+    java DogTestdrive
+
+    Below one is the code snippet:
+        class Dog{
+            int size;
+            String breed;
+            String name;
+
+            void bark(){
+                System.out.println("Bow, Bow!!!");
+            }
+        }
+
+        class DogTestdrive{
+            public static void main(String args[]){
+                Dog d = new Dog();
+                d.size = 40;
+                d.bark();
+            }
+        }
+
+2.
