@@ -25,4 +25,10 @@ To resolve this I just need to the class which has main method(in this case DogT
             }
         }
 
+
+=====================================================================================
 2.
+If you modify the code and try to run without compiling, you may get the errors. so compile each time after modifying the file so that you will get the correct/clear/actual output.
+
+=====================================================================================
+3. 
