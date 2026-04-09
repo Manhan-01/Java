@@ -8,3 +8,23 @@ JDK vs JRE vs JVM
     JVM creates a virtual execution Environment on top of Operating system, which makes Java as Platform independent. our java code 
     will be depending on some dependancies like inbuilt class or some files. and these files will be present inside JRE.
     JVM is part of JRE, so we can't use JVM without JRE. and both togather make JDK
+
+
+Method Overwriting:
+    Method overwriting exist to act differently while calling the method with different parameters.
+    java allows to create multiple methods with same name, without throwing errors. but the methods should have different parameter.
+    having the same parameter will end up in throwing the following error
+
+        $ java Practice10.java 
+        Practice10.java:5: error: method add(int,int) is already defined in class Calculator
+            public int add(int a, int b){
+                       ^
+        1 error
+        error: compilation failed 
+
+Difference between '==' and .equals()
+    == will perform address/reference comparision
+    .equals() will perform content comparision.
+    
+    if we are creating two different objects and try to compare, we will get FALSE response, 
+    == check whether two reference are pointing to same object.
