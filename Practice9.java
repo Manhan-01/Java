@@ -19,13 +19,22 @@ class Computer{
 
         return resp;
 }
+
+    public String playMusic(String songName){
+        
+        System.out.println("Searching for the song online");
+        return "Enjoy the song : "+songName;
+    }
 }
 
 public class Practice9 {
 
     public static void main(String args[]){
         Computer lenovo = new Computer();
-        String res = lenovo.playMovie("KGF");
-        System.out.println(res);
+        String movie = lenovo.playMovie("KGF");
+        System.out.println(movie);
+
+        String music = lenovo.playMusic("Despacito");
+        System.out.println(music);
     }
 }
