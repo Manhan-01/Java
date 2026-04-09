@@ -1,0 +1,10 @@
+JDK vs JRE vs JVM
+    JDK - Java Development Kit
+    JRE - Java Runtime Environment
+    JVM - Java Virtual Machine
+
+    The machine won't understand the java code we wrote. It only understands bytecode and we can't write bytecode by ourselves so 
+    whenever we compile the java sorce code it will be converting into bytecode.
+    JVM creates a virtual execution Environment on top of Operating system, which makes Java as Platform independent. our java code 
+    will be depending on some dependancies like inbuilt class or some files. and these files will be present inside JRE.
+    JVM is part of JRE, so we can't use JVM without JRE. and both togather make JDK
