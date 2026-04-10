@@ -1,30 +1,41 @@
-JDK vs JRE vs JVM
-    JDK - Java Development Kit
-    JRE - Java Runtime Environment
-    JVM - Java Virtual Machine
+1. JDK vs JRE vs JVM
+        JDK - Java Development Kit
+        JRE - Java Runtime Environment
+        JVM - Java Virtual Machine
+ 
+        The machine won't understand the java code we wrote. It only understands bytecode and we can't write bytecode by ourselves so 
+        whenever we compile the java sorce code it will be converting into bytecode.
+        JVM creates a virtual execution Environment on top of Operating system, which makes Java as Platform independent. our java code 
+        will be depending on some dependancies like inbuilt class or some files. and these files will be present inside JRE.
+        JVM is part of JRE, so we can't use JVM without JRE. and both togather make JDK
 
-    The machine won't understand the java code we wrote. It only understands bytecode and we can't write bytecode by ourselves so 
-    whenever we compile the java sorce code it will be converting into bytecode.
-    JVM creates a virtual execution Environment on top of Operating system, which makes Java as Platform independent. our java code 
-    will be depending on some dependancies like inbuilt class or some files. and these files will be present inside JRE.
-    JVM is part of JRE, so we can't use JVM without JRE. and both togather make JDK
 
-
-Method Overwriting:
-    Method overwriting exist to act differently while calling the method with different parameters.
-    java allows to create multiple methods with same name, without throwing errors. but the methods should have different parameter.
-    having the same parameter will end up in throwing the following error
-
-        $ java Practice10.java 
-        Practice10.java:5: error: method add(int,int) is already defined in class Calculator
-            public int add(int a, int b){
-                       ^
-        1 error
-        error: compilation failed 
-
-Difference between '==' and .equals()
-    == will perform address/reference comparision
-    .equals() will perform content comparision.
+2. Method Overwriting:
+        Method overwriting exist to act differently while calling the method with different parameters.
+        java allows to create multiple methods with same name, without throwing errors. but the methods should have different parameter.
+        having the same parameter will end up in throwing the following error
     
-    if we are creating two different objects and try to compare, we will get FALSE response, 
-    == check whether two reference are pointing to same object.
+            $ java Practice10.java 
+            Practice10.java:5: error: method add(int,int) is already defined in class Calculator
+                public int add(int a, int b){
+                           ^
+            1 error
+            error: compilation failed 
+
+3. Difference between '==' and .equals()
+        == will perform address/reference comparision
+        .equals() will perform content comparision.
+        
+        if we are creating two different objects and try to compare, we will get FALSE response, 
+        == check whether two reference are pointing to same object.
+
+
+4. Difference between Stack and Heap memeory
+        Stack : Used to store quick variables, Primitive datatypes, object references, method calls, local variables.
+        Heap : Used to store objects, Arrays, Instance variables, anything created with "new".
+
+        Stack : Memory management is automatic, it is cleaned automatically.
+        Heap : Garbage collector will clean the Heap memeory.
+
+        Stack : Follows LIPO
+        Heap : Priority based retrival
