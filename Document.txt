@@ -39,3 +39,13 @@
 
         Stack : Follows LIPO
         Heap : Priority based retrival
+
+
+5. Arrays  
+        Arrays are used to store multiple values of same datatypes in a single variable.
+        
+        Syntax: <datatype> <ArrayName>[] = {"value1","value2","value3",......,"valueN"};
+                int marks[] = {97,93,47,56,73,98,60,89,83};
+                String names[] = {"Mandy","Dumms","Appa","Amma","Tangi"};
+
+        
