@@ -11,7 +11,6 @@ public class Practice14 {
         System.out.println(marks);
 
         // To make it work you can run a loop through an array
-
         for (int i =0; i<marks.length;i++){
             System.out.println(marks[i]);
         }

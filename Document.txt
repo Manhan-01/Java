@@ -48,4 +48,8 @@
                 int marks[] = {97,93,47,56,73,98,60,89,83};
                 String names[] = {"Mandy","Dumms","Appa","Amma","Tangi"};
 
-        
+        Use Practice14.java to see how to get all the values in array by using loops.
+
+        we can access the values of an array by using their index numbers
+                names[1];
+
