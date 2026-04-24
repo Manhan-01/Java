@@ -53,3 +53,9 @@
         we can access the values of an array by using their index numbers
                 names[1];
 
+6. variables
+        Variable is a cup that holds something.
+        Think of variables as cups of different type and sizes, like type Glass, Ceramic, Steel, Paper and Sizes like Small, Medium, Large.
+        In the similar way, variable type String, int, boolean, double etc and sizes like 8,16,32 bits etc.
+
+        As the analogy we used as cup for variable, if we fill more than its capacity, it will spill right(will throw an error : error: integer number too large)
