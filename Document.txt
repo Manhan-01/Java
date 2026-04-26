@@ -61,6 +61,18 @@
         As the analogy we used as cup for variable, if we fill more than its capacity, it will spill right(will throw an error : error: integer number too large).
 
 7. Encapsulation
-        
+        Encapsulation is used to make sure sensetive data is hidden from the user.
+                Declare the variable/attribute private.
+                Provide public get and set method to access and update the private variable.
+
         If we try to access private variable/attributes without using getter and setters, we will get the following error.     
                 error: <variable/attribute> has private access in Demo
+
+
+8. Constructor
+        Constructor is a special method.
+        Constructor name should be same as class name.
+        Constructor wont return anything.
+        Constructor runs automatically whenever a new object is created.
+        It is used to initialize an object.
+        It sets initial values
