@@ -58,4 +58,9 @@
         Think of variables as cups of different type and sizes, like type Glass, Ceramic, Steel, Paper and Sizes like Small, Medium, Large.
         In the similar way, variable type String, int, boolean, double etc and sizes like 8,16,32 bits etc.
 
-        As the analogy we used as cup for variable, if we fill more than its capacity, it will spill right(will throw an error : error: integer number too large)
+        As the analogy we used as cup for variable, if we fill more than its capacity, it will spill right(will throw an error : error: integer number too large).
+
+7. Encapsulation
+        
+        If we try to access private variable/attributes without using getter and setters, we will get the following error.     
+                error: <variable/attribute> has private access in Demo
