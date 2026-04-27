@@ -76,3 +76,15 @@
         Constructor runs automatically whenever a new object is created.
         It is used to initialize an object.
         It sets initial values
+
+        Default Constructor and parameterized Constructor
+                Default Constructor:
+                        It doesn't require any parameter.
+                        we are defining parameters inside the Constructor and will take multiple lines and is messy.
+
+                parameterized Constructor:
+                        It requires parameters
+                        parameters defined while creating an object, so it will be completing in a single line.
+
+Static Variable
+        
