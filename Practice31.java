@@ -17,6 +17,7 @@ class Students{
     public int getMarks(){
         return marks;
     }
+    static String college = "KLECET";
 
 
     // Created a constructor here, which applies some default values. These will be default instance variables
@@ -34,10 +35,31 @@ class Students{
     }
 }
 
+
+// Analogy for static keyword
+// class Strdents{
+//     String Sname;
+//     int Smarks;
+//     static String college = "KLECET";
+
+//     public void setSName(String n){
+//         this.Sname = n;
+//     }
+//     public String getSName(){
+//         return Sname;
+//     }
+//     public void setSMarks(int m){
+//         this.Smarks = m;
+//     }
+//     public int getSMarks(){
+//         return Smarks;
+//     }
+// }
+
 public class Practice31 {
 
     public static void main(String args[]){
-        Students s1 = new Students();
+        // Students s1 = new Students();
         // s1.name = "Mandy";
 
         // s1.setName("Mandy");
@@ -45,13 +67,17 @@ public class Practice31 {
         // System.out.println(s1.getName());
 
 
-        s1.setMarks(97);
-        System.out.println(s1.getMarks());
+        // s1.setMarks(97);
+        // System.out.println(s1.getMarks());
 
 
         // Parameterized constructor
         Students s2 = new Students("Dumms", 95);
         System.out.println(s2.getMarks());
+
+        Students s1 = new Students("Mandy",99);
+        System.out.println(s1.college + s2.college);
+
 
 
     }
