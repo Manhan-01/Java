@@ -86,7 +86,7 @@
                         It requires parameters
                         parameters defined while creating an object, so it will be completing in a single line.
 
-Static Variable
+9. Static Variable
         Instance variable and local variable
                 Instance variable: are defined inside class
                 local variable : are defined inside method.
