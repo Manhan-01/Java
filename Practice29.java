@@ -1,4 +1,5 @@
 // Encapsulation
+package CoreJava;
 
 class Demo{
     private String name;
