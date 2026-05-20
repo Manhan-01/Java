@@ -65,6 +65,16 @@ public class Question {
     public void setAnswer(String answer) {
         this.answer = answer;
     }
+    @Override
+    public String toString() {
+        return "Question [id=" + id + ", question=" + question + ", opt1=" + opt1 + ", opt2=" + opt2 + ", opt3=" + opt3
+                + ", opt4=" + opt4 + ", answer=" + answer + ", getId()=" + getId() + ", getQuestion()=" + getQuestion()
+                + ", getOpt1()=" + getOpt1() + ", getOpt2()=" + getOpt2() + ", getOpt3()=" + getOpt3() + ", getOpt4()="
+                + getOpt4() + ", getAnswer()=" + getAnswer() + ", getClass()=" + getClass() + ", hashCode()="
+                + hashCode() + ", toString()=" + super.toString() + "]";
+    }
+
+    
 
     
 }
