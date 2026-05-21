@@ -8,6 +8,10 @@ public class QuestionService {
     Question[] questions = new Question[5];
     String ans[] = new String[5];
     int score = 0;
+    String[] wrongAns = new String[ans.length];
+    int wrongAnsCount = 0;
+    int wrongAnsOpts = 0;
+    
 
 
     public QuestionService(){
@@ -45,6 +49,12 @@ public class QuestionService {
             if(ans[i].equals(q.getAnswer())){
                 score++;
             }
+            else{
+                
+                wrongAns[wrongAnsCount] = ans[i];
+                wrongAnsCount++;
+
+            }
 
             i++;
             // if(ans == q.getAnswer()){
@@ -56,6 +66,12 @@ public class QuestionService {
             for(String s : ans){
                 System.out.println(s);
             }
+            System.out.println("");
+            System.out.println("Your wrong answers are : ");
+            for(String n : wrongAns){
+                
+                System.out.println(n);
+            }
 
 
             System.out.println("");
@@ -66,7 +82,14 @@ public class QuestionService {
             
         }
         public void printScore(){
-            System.out.println("Your score is : "+score);
+            if(score < 3){
+                System.out.println("You need to improve. Your score is : "+score);
+            }else if(score == questions.length){
+                System.out.println("Excellent, You are a Genius");
+                System.out.println("Your Scored out of out 5/5 ");
+            }else{
+                System.out.println("Your score is : "+score);
+            }
         }
 
     }
