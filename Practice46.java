@@ -116,18 +116,34 @@ public class Practice46 {
         // }
 
         // **Alternative way to save time complexity
-        int numbers[] = {1,2,3,3,4,5,5,5,6,7,8};
-        int temp[] = new int[numbers.length];
-        int rd = 0;
+        // int numbers[] = {1,2,3,3,4,5,5,5,6,7,8};
+        // int temp[] = new int[numbers.length];
+        // int rd = 0;
+        // for(int i=1;i<numbers.length;i++){
+        //     if(numbers[rd] != numbers[i]){
+        //         rd++;
+        //         numbers[rd] = numbers[i];
+        //     }
+        // }
+        // for(int j:numbers){
+        //     System.out.print(j+" ");
+        // }
+
+        // #########################################################
+
+
+        // Rotate Array by k position
+        int[] numbers = {1,2,3,4,5};
+        int temp = numbers[0];
         for(int i=1;i<numbers.length;i++){
-            if(numbers[rd] != numbers[i]){
-                rd++;
-                numbers[rd] = numbers[i];
-            }
+            numbers[i-1] = numbers[i];
         }
-        for(int j:numbers){
-            System.out.print(j+" ");
+        numbers[numbers.length-1] = temp;
+
+        for(int a : numbers){
+            System.out.print(a+" ");
         }
+        
         
 
 
