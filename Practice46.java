@@ -25,21 +25,54 @@ public class Practice46 {
 
 
         // Palindrome
-        System.out.println("Palindrome");
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a String or Number");
-        String inp = sc.nextLine().toUpperCase();
-        String out = "";
-        int len = inp.length();
-        for(int i=len-1;i>=0;i--){
-            out = out+inp.charAt(i);
-        }
-        if(inp.equals(out)){
-            System.out.println("Palindrome");
-        }else{
-            System.out.println("Not a Palindrome");
-        }
+        // System.out.println("Palindrome");
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter a String or Number");
+        // String inp = sc.nextLine().toUpperCase();
+        // String out = "";
+        // int len = inp.length();
+        // for(int i=len-1;i>=0;i--){
+        //     out = out+inp.charAt(i);
+        // }
+        // if(inp.equals(out)){
+        //     System.out.println("Palindrome");
+        // }else{
+        //     System.out.println("Not a Palindrome");
+        // }
 
+        // ############################################################
+
+
+        // Finding the duplicate characters
+        // System.out.println("Finding the duplicate characters");
+        // String str = "Mahantesh";
+        // for(int i=0;i<str.length();i++){
+        //     for(int j=i;j<str.length();j++){
+        //         if(str.charAt(i).equals(str.charAt(j))){
+
+        //         }
+        //             }
+
+
+        // #############################################################
+
+
+
+        // Largest and Smallest Number
+        System.out.println("Largest and Smallest Number");
+        int numbers[] = {23,54,63,26,82,15};
+        int smallest = numbers[0];
+        int Largest = numbers[0];
+        
+        for(int i=0;i<numbers.length;i++){
+            if(numbers[i]>Largest){
+                Largest = numbers[i];
+            }else if(numbers[i]<smallest){
+                smallest = numbers[i];
+            }
+        }
+        System.out.println("Smallest : "+smallest);
+        System.out.println("Largest : "+Largest);
         
     }
 }
