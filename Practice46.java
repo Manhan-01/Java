@@ -100,19 +100,33 @@ public class Practice46 {
 
 
         // Remove Duplicate numbers 
-        int numbers[] = {1,2,2,3,4,5,6,6,6,7};
-        System.out.println(numbers.length);
-        int result[] = new int[numbers.length];
-        result[0] = numbers[0];
-        int rd=0;
+        // int numbers[] = {1,2,2,3,4,5,6,6,6,7};
+        // System.out.println(numbers.length);
+        // int result[] = new int[numbers.length];
+        // result[0] = numbers[0];
+        // int rd=0;
+        // for(int i=1;i<numbers.length;i++){
+        //     if(numbers[i]!=result[rd]){
+        //         rd++;
+        //         result[rd] = numbers[i];
+        //     }
+        // }
+        // for(int n : result){
+        //     System.out.print(n+" ");
+        // }
+
+        // **Alternative way to save time complexity
+        int numbers[] = {1,2,3,3,4,5,5,5,6,7,8};
+        int temp[] = new int[numbers.length];
+        int rd = 0;
         for(int i=1;i<numbers.length;i++){
-            if(numbers[i]!=result[rd]){
+            if(numbers[rd] != numbers[i]){
                 rd++;
-                result[rd] = numbers[i];
+                numbers[rd] = numbers[i];
             }
         }
-        for(int n : result){
-            System.out.print(n+" ");
+        for(int j:numbers){
+            System.out.print(j+" ");
         }
         
 
