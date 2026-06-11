@@ -60,7 +60,15 @@ public class Practice46 {
 
         // Largest and Smallest Number
         System.out.println("Largest and Smallest Number");
-        int numbers[] = {23,54,63,26,82,15};
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of inputs");
+        int n = sc.nextInt();
+        int[] numbers = new int[n];
+        System.out.println("Enter the numbers below : ");
+        for(int j=0;j<n;j++){
+            numbers[j] = sc.nextInt();
+        }
+        // int numbers[] = {23,54,63,26,82,15};
         int smallest = numbers[0];
         int Largest = numbers[0];
         
