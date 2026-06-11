@@ -59,28 +59,64 @@ public class Practice46 {
 
 
         // Largest and Smallest Number
-        System.out.println("Largest and Smallest Number");
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number of inputs");
-        int n = sc.nextInt();
-        int[] numbers = new int[n];
-        System.out.println("Enter the numbers below : ");
-        for(int j=0;j<n;j++){
-            numbers[j] = sc.nextInt();
-        }
-        // int numbers[] = {23,54,63,26,82,15};
-        int smallest = numbers[0];
-        int Largest = numbers[0];
+        // System.out.println("Largest and Smallest Number");
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter the number of inputs");
+        // int n = sc.nextInt();
+        // int[] numbers = new int[n];
+        // System.out.println("Enter the numbers below : ");
+        // for(int j=0;j<n;j++){
+        //     numbers[j] = sc.nextInt();
+        // }
+        // // int numbers[] = {23,54,63,26,82,15};
+        // int smallest = numbers[0];
+        // int Largest = numbers[0];
         
-        for(int i=0;i<numbers.length;i++){
-            if(numbers[i]>Largest){
-                Largest = numbers[i];
-            }else if(numbers[i]<smallest){
-                smallest = numbers[i];
+        // for(int i=0;i<numbers.length;i++){
+        //     if(numbers[i]>Largest){
+        //         Largest = numbers[i];
+        //     }else if(numbers[i]<smallest){
+        //         smallest = numbers[i];
+        //     }
+        // }
+        // System.out.println("Smallest : "+smallest);
+        // System.out.println("Largest : "+Largest);
+        // ####################################################################
+
+
+
+        // Finding the missing number ==> Yet to complete
+        // int[] numbers = {1,2,3,5,6};
+        // int start = numbers[0];
+        // int end = numbers[numbers.length-1];
+        // int add;
+
+        // for(int i=start;i<=end;i++){
+        //     add = add+numbers[i];
+        // }
+
+        // ###################################################################
+
+
+
+        // Remove Duplicate numbers 
+        int numbers[] = {1,2,2,3,4,5,6,6,6,7};
+        System.out.println(numbers.length);
+        int result[] = new int[numbers.length];
+        result[0] = numbers[0];
+        int rd=0;
+        for(int i=1;i<numbers.length;i++){
+            if(numbers[i]!=result[rd]){
+                rd++;
+                result[rd] = numbers[i];
             }
         }
-        System.out.println("Smallest : "+smallest);
-        System.out.println("Largest : "+Largest);
+        for(int n : result){
+            System.out.print(n+" ");
+        }
         
+
+
+
     }
 }
