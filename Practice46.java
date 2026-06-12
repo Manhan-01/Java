@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 public class Practice46 {
 
     public static void main(String args[]){
@@ -133,18 +134,82 @@ public class Practice46 {
 
 
         // Rotate Array by k position
-        int[] numbers = {1,2,3,4,5};
-        int temp = numbers[0];
-        for(int i=1;i<numbers.length;i++){
-            numbers[i-1] = numbers[i];
-        }
-        numbers[numbers.length-1] = temp;
+        // int[] numbers = {1,2,3,4,5};
+        // int temp = numbers[0];
+        // for(int i=1;i<numbers.length;i++){
+        //     numbers[i-1] = numbers[i];
+        // }
+        // numbers[numbers.length-1] = temp;
 
-        for(int a : numbers){
+        // for(int a : numbers){
+        //     System.out.print(a+" ");
+        // }
+
+
+        // ***********
+        // int[] a = {1,2,3,4,5};
+        // for(int i=0;i<a.length;i++){
+        //     System.out.print(a[i]+" ");
+        // }        
+        // System.out.println();
+        // rotateAnArray(a);
+        // for(int i=0;i<a.length;i++){
+        //     System.out.print(a[i]+" ");
+        // }
+
+        // *******************
+
+        int[] numbers = {10,20,30,40,50,60,70};
+        int n = numbers.length-1;
+        int k = 3;
+        int[] rev = new int[n+1];
+        
+
+        // STEP 1 : Reverse the array
+        for(int i=n;i>=0;i--){
+            rev[n-i] = numbers[i];
+        }
+        System.out.println("Step 1: Reverse the array");
+        for(int a : rev){
             System.out.print(a+" ");
         }
         
-        
+
+        // STEP 2 : reverse first K elements in reversed array
+        int left = 0;
+        int right = k-1;
+        while(left<right){
+            int temp = rev[left];
+            rev[left] = rev[right];
+            rev[right] = temp;
+
+            left++;
+            right--;
+        }
+        System.out.println();
+        System.out.println("Step 2: reverse first k elemts");
+        for(int i: rev){
+            System.out.print(i+" ");
+        }
+
+        // STEP 3: reverse the elements from k to n;
+        while (k<n) {
+            int temp2 = rev[k];
+            rev[k] = rev[n];
+            rev[n] = temp2;
+
+            k++;
+            n--;
+            
+        }
+        System.out.println();
+
+        System.out.println();
+        System.out.println("step 3: final output");
+        for(int i: rev){
+            System.out.print(i+" ");
+        }
+
 
 
 
