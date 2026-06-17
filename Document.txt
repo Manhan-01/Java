@@ -120,3 +120,7 @@
                 Concrete method : methods with implementation.
         We cannot create an object of Abstract class but we can create an object reference of Abstract class.
         We should define all the Abstract methods of Abstract class in inherited classes, and if we miss to do so, we will get an error.
+
+
+12. Inner class         
+        

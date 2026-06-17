@@ -1,3 +1,17 @@
+class A{
+    int a = 20032026;
+    public void show(){
+        System.out.println("Show in A");
+    }
+
+    class B{
+        public void config(){
+            System.out.println("Config inside class B, which is inside class A");
+        }
+    }
+}
+
+
 abstract class Animal {
     public void eat(){
         System.out.println("Eating");
@@ -43,14 +57,26 @@ public class Practice50 {
     public static void main(String args[]){
         // System.out.println("Abstrack keyword");
 
-        Car obj = new WagonR();
+        // Car obj = new WagonR();
         // The reason we created reference of abstract class(Car) and cannot create object of abstract car
         // obj.drive();
         // obj.playMusic();
 
 
-        Animal leo = new Lion();
-        leo.makeSound();
-        leo.sleeping();
+        // Animal leo = new Lion();
+        // leo.makeSound();
+        // leo.sleeping();
+
+
+
+        A obj = new A();
+        obj.show();
+
+        // A.B b = new B();
+        // b.config();
+        // Accessing the inner class. We cannot access B class as it is inside A class.
+        A.B obj1 = obj.new B();
+        obj1.config();
+
     }
 }
