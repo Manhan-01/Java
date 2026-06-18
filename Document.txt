@@ -124,5 +124,7 @@
 
 12. Inner class         
         It is a class defined inside another class.
+        Inner classes are useful when they are tightly coupled with the outer class.and should not be existed independently.
+        Ex:  In Bank Account, the transactions should be tightly coupled with account. and cant stay independently.
 
 
