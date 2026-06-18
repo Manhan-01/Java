@@ -123,4 +123,6 @@
 
 
 12. Inner class         
-        
+        It is a class defined inside another class.
+
+
