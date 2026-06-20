@@ -37,4 +37,20 @@ Ja = Right
 Aus = from
 Ich Komme aus Lokapur = I am coming from Lokapur
 
+Day4-----------20/06/2026------------
+Papa - Father/Dad
+Mama = Mother/Mom
+Bruder = Brother
+Schwester = Sister
+Sohn = Son
+Tochter = Daughter
+Mein = My( when refering to musculine gender, like My Father(Mein Papa), My Brother(Mein Bruder))
+Meine = My(Used while refering the femenine, like My Mother(Meine Mama), My Sister(Meine Schwester))
+Nett = Nice
+Lustig = Funny
+Kennenzulernen = To get to know
+Dich = you
+Das = This
+Stift = Pen
+
 

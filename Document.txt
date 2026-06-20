@@ -130,5 +130,7 @@
 
 13. Interface
         Interface is like a class but by default all the methods will be public and Abstract.
-        
+        It is similar to Abstract class, like we cannot instantiate the Abstract method within Abstract class but we can instantiate it in another class        
+                instead of "Abstract" we will use "interface".
+                instead of "extends" we will use "implements".
 
