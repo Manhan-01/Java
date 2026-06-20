@@ -128,5 +128,7 @@
         Ex:  In Bank Account, the transactions should be tightly coupled with account. and cant stay independently.
         Referance : Practice52.java
 
-
+13. Interface
+        Interface is like a class but by default all the methods will be public and Abstract.
+        
 
