@@ -134,3 +134,6 @@
                 instead of "Abstract" we will use "interface".
                 instead of "extends" we will use "implements".
 
+14. Lambda expression
+        
+
