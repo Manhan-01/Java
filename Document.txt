@@ -142,4 +142,14 @@
 15. Exception Handling
         Exception Handling is an Object oriented mechanism to handle the runtime errors without interrupt the flow of an application.
         first we will use "try" for the code if we are expecting any Exception and if that block throws any error, we will catch that error.
+        we need to keep the parent Exception at the end.
+                try{
+                        try this code, and if some Exception jump to catch block.
+                }catch(ArithmeticException e){
+                        throw if Arithmetic error
+                }catch(ArrayIndexOutOfBoundException e){
+                        throw if array out of index error.
+                }catch(Exception e){
+                        throw if the error didn't fell in any of the above Exception.
+                }
 
