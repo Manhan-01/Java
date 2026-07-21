@@ -153,3 +153,6 @@
                         throw if the error didn't fell in any of the above Exception.
                 }
 
+        Runtime Exception are called as unchecked Exception and other Exceptions are called checked Exception.
+        unchecked Exceptions wont force you handle the Exception and checked will force you to handle the Exception.
+
