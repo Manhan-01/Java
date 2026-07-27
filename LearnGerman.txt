@@ -53,4 +53,18 @@ Dich = you
 Das = This
 Stift = Pen
 
+27/07/2026 - Youtube
+Hallo = Hello
+Guten Tag - Good Day
+Guten Morgen - Good Morning
+Guten Abend - Good Evening
+Gute Nacht - Good Night
+Auf Wiedersehen - See you again
+Bis Bald - See you soon
+
+Lektion - Lesson
+Eins - One
+Begruβungen - Greetings
+Tschuss - Bye
+
 
