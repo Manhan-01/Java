@@ -116,6 +116,11 @@ class Practice60{
 
         System.out.println(c.count);
 
+        int cores = Runtime.getRuntime().availableProcessors();
+
+
+        System.out.println("Available threads : "+cores);
+
 
     }
 }
