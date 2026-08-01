@@ -55,8 +55,16 @@ public class Practice67 {
         // END###########################################################################END
 
         // START###########################################################################START
+        // We can also perform all steps of above with single line of code as below
 
+        int result = nums.stream()
+                    .filter(n -> n%2 == 0)
+                    .map(n -> n*2)
+                    .reduce(0,(c,e) -> c+e);
+
+        System.out.println(result);
         
+        // END###########################################################################END
 
 
 
