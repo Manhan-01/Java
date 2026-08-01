@@ -12,7 +12,9 @@ public class Practice66 {
 
         // System.out.println(employee);
         // System.out.println(employee.get("Mahantesh"));
-        employee.forEach(n -> System.out.println(n));
+        // employee.forEach(n -> System.out.println(n));
+
+        // Map in java is used to have array with key,value pairs.
         
 
 
